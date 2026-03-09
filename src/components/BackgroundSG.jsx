@@ -1,6 +1,6 @@
 import { ShaderGradientCanvas, ShaderGradient } from '@shadergradient/react'
 
-export default function BackgroundSG() {
+export default function BackgroundSG(props) {
     return (
         // Shader Gradient
         < div className="fixed -z-10 h-full w-full" >
@@ -15,9 +15,9 @@ export default function BackgroundSG() {
                     cDistance={4.4}
                     cPolarAngle={70}
                     cameraZoom={1}
-                    color1="#f0f0ff"
-                    color2="#180871"
-                    color3="#0077ff"
+                    color1={props.tema == 0 ? "#f0f0ff" : "#020617"}
+                    color2={props.tema == 0 ? "#180871" : "#312e81"}
+                    color3={props.tema == 0 ? "#0077ff" : "#3b82f6"}
                     destination="onCanvas"
                     embedMode="off"
                     envPreset="city"
