@@ -15,9 +15,9 @@ export default function BackgroundSG(props) {
                     cDistance={4.4}
                     cPolarAngle={70}
                     cameraZoom={1}
-                    color1={props.tema == 0 ? "#f0f0ff" : "#020617"}
-                    color2={props.tema == 0 ? "#180871" : "#312e81"}
-                    color3={props.tema == 0 ? "#0077ff" : "#3b82f6"}
+                    color1={props.tema == 1 ? "#f0f0ff" : "#020617"}
+                    color2={props.tema == 1 ? "#180871" : "#312e81"}
+                    color3={props.tema == 1 ? "#0077ff" : "#3b82f6"}
                     destination="onCanvas"
                     embedMode="off"
                     envPreset="city"
