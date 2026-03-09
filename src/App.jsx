@@ -17,6 +17,19 @@ function App() {
 
   const styleLinks = "flex w-fit items-center gap-5 text-white transition-all duration-500 ease-in-out font-bold hover:underline hover:text-violet-300 text-sm md:text-lg"
 
+  const data = new Date();
+  const hora = data.getHours();
+  var msgPersonalizada;
+  if (hora >= 6 && hora < 12) {
+    msgPersonalizada = "Bom Dia!";
+  } else if (hora >= 12 && hora < 18) {
+    msgPersonalizada = "Boa Tarde!";
+  } else if (hora >= 18) {
+    msgPersonalizada = "Boa Noite!";
+  } else {
+    msgPersonalizada = "Olá!";
+  }
+
   return (
     <>
       {/* Fundo com Shader Gradient */}
@@ -33,15 +46,9 @@ function App() {
         {/* Seção Sobre Mim */}
         <section className='w-11/12 bg-white/25 rounded-lg flex flex-col gap-5 items-center py-10 overflow-auto'>
           <h2 className='text-white text-2xl w-full text-center'>Sobre Mim</h2>
-          <div className='w-11/12 gap-5'>
-            <p>Eu sou Matheus Gonçalves Benevides, tenho {2026 - 2006} anos de idade, estudo a área desde 2024, atualmente curso <strong className='text-violet-300'>Sistemas das Informação</strong> e também curso Técnico em <strong className='text-violet-300'>Desenvolvimento de Sistemas</strong>.</p>
-            <h3>Algumas Linguagens/Frameworks que pretendo estudar até o fim do ano:</h3>
-            <ul className='flex flex-col px-4'>
-              <li className='flex items-center gap-5' ><FaNodeJs className='text-2xl text-emerald-500' />Node.js</li>
-              <li className='flex items-center gap-5' ><SiExpress className='text-2xl text-black' />Express.js</li>
-              <li className='flex items-center gap-5' ><SiDjango className='text-2xl text-emerald-400' />Django</li>
-              <li className='flex items-center gap-5' ><SiReact className='text-2xl text-sky-400' />React Native</li>
-            </ul>
+          <div className='w-11/12 flex flex-col gap-5'>
+            <p className='text-lg'>{msgPersonalizada} Meu nome é Matheus Gonçalves Benevides, tenho {new Date().getFullYear() - 2006} anos de idade.</p>
+            <p className='text-lg'>Sou um desenvolvedor Full Stack em formação, atualmente curso <strong className='text-violet-300'>Sistemas da Informação</strong> e também curso Técnico em <strong className='text-violet-300'>Desenvolvimento de Sistemas</strong>. Estudo a área desde 2024 e venho me dedicando ao desenvolvimento web, buscando sempre me aprimorar e aprender novas tecnologias.</p>
           </div>
         </section>
         <section className='bg-white/20 flex w-11/12 py-10 rounded-lg flex-col gap-10 items-center'>
