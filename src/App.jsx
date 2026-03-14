@@ -34,7 +34,7 @@ function App() {
     <>
       {/* Fundo com Shader Gradient */}
       < BackgroundSG tema={tema} />
-      < main className="min-h-screen w-full flex flex-col items-center justify-center gap-20 py-10 overflow-auto" >
+      < main className="min-h-screen w-full flex flex-col items-center justify-center gap-20 py-10 overflow-auto text-white" >
         {/* Btn de mudar tema */}
         < button className='cursor-pointer text-2xl hover:bg-white/50 transition-all duration-500 ease-in-out hover:scale-110 rounded-lg bg-white/20 border-1 border-white/25 p-2 fixed top-5 right-5 text-white' onClick={() => { setTema(!tema) }
         }> {tema == false ? <FaMoon /> : <FaSun />}</button >
@@ -44,14 +44,14 @@ function App() {
           <p className='italic font-bold text-xl text-white'>Matheus G Benevides</p>
         </section >
         {/* Seção Sobre Mim */}
-        <section className='w-11/12 bg-white/25 rounded-lg flex flex-col gap-5 items-center py-10 overflow-auto'>
+        <section className='w-11/12 bg-white/10 border-1 border-white/25 rounded-lg flex flex-col gap-5 items-center py-10 overflow-auto backdrop-blur-4xl'>
           <h2 className='text-white text-2xl w-full text-center'>Sobre Mim</h2>
           <div className='w-11/12 flex flex-col gap-5'>
             <p className='text-lg'>{msgPersonalizada} Meu nome é Matheus Gonçalves Benevides, tenho {new Date().getFullYear() - 2006} anos de idade.</p>
-            <p className='text-lg'>Sou um desenvolvedor Full Stack em formação, atualmente curso <strong className='text-violet-300'>Sistemas da Informação</strong> e também curso Técnico em <strong className='text-violet-300'>Desenvolvimento de Sistemas</strong>. Estudo a área desde 2024 e venho me dedicando ao desenvolvimento web, buscando sempre me aprimorar e aprender novas tecnologias.</p>
+            <p className='text-lg'>Sou um desenvolvedor Full Stack em formação, atualmente curso <strong className='text-pink-500'>Sistemas da Informação</strong> e também curso Técnico em <strong className='text-sky-500'>Desenvolvimento de Sistemas</strong>. Estudo a área desde 2024 e venho me dedicando ao desenvolvimento web, buscando sempre me aprimorar e aprender novas tecnologias.</p>
           </div>
         </section>
-        <section className='bg-white/20 flex w-11/12 py-10 rounded-lg flex-col gap-10 items-center'>
+        <section className='bg-white/10 border-1 border-white/25 flex w-11/12 py-10 rounded-lg flex-col gap-10 items-center backdrop-blur-4xl'>
           {/*Seção de Skills*/}
           < section className='w-11/12 p-5 rounded-lg flex flex-wrap gap-5 items-center justify-around' >
             <h1 className='w-full text-center text-2xl text-white'>Habilidades</h1>
@@ -62,7 +62,7 @@ function App() {
             <Card titulo='Ferramentas' />
           </section >
           {/*Seção Contatos*/}
-          <section className='w-11/12 p-5 rounded-lg gap-5 flex flex-col justify-center'>
+          <section className='w-11/12 p-5 rounded-lg gap-5 flex flex-col justify-center backdrop-blur-4xl'>
             <h1 className='w-full text-center text-2xl text-white'>Contatos</h1>
             <div className='w-full bg-white/25 border-1 border-white/25 p-5 gap-5 rounded-lg flex flex-col overflow-auto'>
               <a href="https://instagram.com/mth.benevides" target='_blank' className={styleLinks}><BsInstagram className='text-pink-500 text-2xl' /> @mth.benevides</a>
