@@ -62,7 +62,7 @@ function App() {
             <Card titulo='Ferramentas' />
           </section >
           {/*Seção Contatos*/}
-          <section className='w-11/12 p-5 rounded-lg gap-5 flex flex-col justify-center backdrop-blur-4xl'>
+          <section className='w-11/12 p-5 rounded-lg gap-5 flex flex-col justify-center items-center backdrop-blur-4xl'>
             <h1 className='w-full text-center text-2xl text-white'>Contatos</h1>
             <div className='w-full bg-white/25 border-1 border-white/25 p-5 gap-5 rounded-lg flex flex-col overflow-auto'>
               <a href="https://instagram.com/mth.benevides" target='_blank' className={styleLinks}><BsInstagram className='text-pink-500 text-2xl' /> @mth.benevides</a>
