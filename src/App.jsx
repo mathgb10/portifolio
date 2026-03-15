@@ -15,7 +15,7 @@ function App() {
     localStorage.setItem("tema_portifolio", tema)
   }, [tema])
 
-  const styleLinks = "flex w-fit items-center gap-5 text-white transition-all duration-500 ease-in-out font-bold hover:underline hover:text-violet-300 text-sm md:text-lg"
+  const styleLinks = "flex w-fit items-center gap-5 text-white transition-all duration-500 ease-in-out font-bold hover:underline hover:text-sky-500 text-sm md:text-lg"
 
   const data = new Date();
   const hora = data.getHours();
@@ -36,7 +36,7 @@ function App() {
       < BackgroundSG tema={tema} />
       < main className="min-h-screen w-full flex flex-col items-center justify-center gap-20 py-10 overflow-auto text-white" >
         {/* Btn de mudar tema */}
-        < button className='cursor-pointer text-2xl hover:bg-white/50 transition-all duration-500 ease-in-out hover:scale-110 rounded-lg bg-white/20 border-1 border-white/25 p-2 fixed top-5 right-5 text-white' onClick={() => { setTema(!tema) }
+        < button className='cursor-pointer text-2xl hover:bg-white/50 transition-all duration-500 ease-in-out hover:scale-110 rounded-lg bg-white/20 border-1 border-white/25 p-2 fixed top-5 right-5 text-sky-500' onClick={() => { setTema(!tema) }
         }> {tema == false ? <FaMoon /> : <FaSun />}</button >
         {/* Seção com Minha foto */}
         < section className='w-full flex flex-col gap-5 mt-25 mb-15 items-center justify-center' >
@@ -62,9 +62,9 @@ function App() {
             <Card titulo='Ferramentas' />
           </section >
           {/*Seção Contatos*/}
-          <section className='w-11/12 p-5 rounded-lg gap-5 flex flex-col justify-center backdrop-blur-4xl'>
-            <h1 className='w-full text-center text-2xl text-white'>Contatos</h1>
-            <div className='w-full bg-white/25 border-1 border-white/25 p-5 gap-5 rounded-lg flex flex-col overflow-auto'>
+          <section className='w-11/12 p-5 rounded-lg gap-5 flex flex-col justify-center items-center backdrop-blur-4xl'>
+            <h1 className='w-full flex-1 text-center text-2xl text-white'>Contatos</h1>
+            <div className='w-full bg-white/10 border-1 border-white/25 p-5 gap-5 rounded-lg flex flex-col overflow-auto'>
               <a href="https://instagram.com/mth.benevides" target='_blank' className={styleLinks}><BsInstagram className='text-pink-500 text-2xl' /> @mth.benevides</a>
               <a href="https://wa.me/5517991389495" target='_blank' className={styleLinks}><BsWhatsapp className='text-emerald-500 text-2xl' /> +55 (17) 99138-9495</a>
               <a href="mailto:matheusgoncalvesbenevides@gmail.com" target='_blank' className={styleLinks}><MdEmail className='text-blue-500 text-2xl' />matheusgoncalvesbenevides@gmail.com</a>

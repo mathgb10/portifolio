@@ -14,7 +14,7 @@ export default function Card(props) {
     const FerramentasTech = [{ id: 1, tech: "Git", icon: <FaGitAlt className={styleIcon + " text-orange-600"} /> }, { id: 2, tech: "GitHub", icon: <FaGithub className={styleIcon} /> }, { id: 3, tech: "Bash", icon: <VscTerminalBash className={styleIcon} /> }]
 
     return (
-        <div className='flex-1 min-w-80 min-h-50 border-1 p-3 border-white/25 rounded-lg bg-white/15 backdrop-blur-4xl transition-all duration-700 ease-in-out hover:bg-white/35 hover:border-white/50 hover:scale-105 hover:shadow-2xl'>
+        <div className='flex-1 min-w-77 min-h-50 border-1 p-3 border-white/25 rounded-lg bg-white/15 backdrop-blur-4xl transition-all duration-700 ease-in-out hover:bg-white/35 hover:border-white/50 hover:scale-105 hover:shadow-2xl'>
             <div className='w-full font-bold text-xl text-white'>
                 <h3>{props.titulo}</h3>
             </div>
