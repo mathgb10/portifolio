@@ -1,5 +1,5 @@
 import BackgroundSG from './components/BackgroundSG'
-import fotoMinha from './assets/225765876.jpg'
+import fotoMinha from './assets/de204a53-60cd-4b13-a45f-f9651466b69f.png'
 import Card from './components/Card'
 import { FaSun, FaMoon, FaGithub, FaNodeJs } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
@@ -60,6 +60,10 @@ function App() {
               <Card titulo='Backend' />
             </div>
             <Card titulo='Ferramentas' />
+            <Card titulo='Experiências' />
+            <div className='w-full'>
+              <Card titulo='Certificações' />
+            </div>
           </section >
           {/*Seção Contatos*/}
           <section className='w-11/12 p-5 rounded-lg gap-5 flex flex-col justify-center items-center backdrop-blur-4xl'>
