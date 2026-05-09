@@ -40,7 +40,7 @@ function App() {
         }> {tema == false ? <FaMoon /> : <FaSun />}</button >
         {/* Seção com Minha foto */}
         < section className='w-full flex flex-col gap-5 mt-25 mb-15 items-center justify-center' >
-          <img src={fotoMinha} alt="Matheus G Benevides" className='w-4/12 md:w-2/12 max-w-50 rounded-full border-5 border-white/10 shadow-2xl' />
+          <div className='border-1 border-white/25 rounded-full'><img src={fotoMinha} alt="Matheus G Benevides" className='w-full max-w-50 shadow-2xl border-5 border-white/10 rounded-full' /></div>
           <p className='italic font-bold text-xl text-white'>Matheus G Benevides</p>
         </section >
         {/* Seção Sobre Mim */}
